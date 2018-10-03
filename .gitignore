@@ -1,3 +1,6 @@
+# Wing IDE individual project configuration
+*.wpu
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
