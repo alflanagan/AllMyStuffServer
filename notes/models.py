@@ -19,7 +19,7 @@ class TextNote(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=60, help_text='A short keyword for classifying things.', unique=True, null=False)
-    parent = models.ForeignKey('self', on_delete=models.PROTECT)
+    parent = models.ForeignKey('self', on_delete=models.PROTECT, null=True)
     class Meta:
         indexes = [
             models.Index(fields=['parent'])
